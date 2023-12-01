@@ -26,13 +26,5 @@ let generateexcuse = () => {
   let randomwhat = Math.floor(Math.random() * what.length);
   let randomwhen = Math.floor(Math.random() * when.length);
 
-  return (
-    who[randomwho] +
-    " " +
-    action[randomaction] +
-    " " +
-    what[randomwhat] +
-    " " +
-    when[randomwhen]
-  );
+  return `${who[randomwho]} ${action[randomaction]} ${what[randomwhat]} ${when[randomwhen]}`;
 };
